@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>JavaScript</title>
+  <meta name="author" content="Luis Guilherme de Oliveira Carvalho e Neillane de Carvalho">
+  <meta name="keywords" content="javascript, 200013749">
+  <meta name="description" content="Atividades sobre JavaScript">
+</head>
+<body>
+  <h1>Tabuada em JavaScript</h1>
+
+  <script>
+
+    function mostrarTabuada() {
+      var numero = prompt("Digite um número para mostrar a tabuada:");
+      var output = "";
+
+      if (numero === null || numero === "") {
+        alert("Nenhum número foi inserido.");
+      } else {
+        numero = parseInt(numero);
+
+        if (isNaN(numero)) {
+          alert("Você não digitou um número válido.");
+        } else {
+          for (var i = 1; i <= 10; i++) {
+            output += numero + " x " + i + " = " + (numero * i) + "\n";
+          }
+          alert("Tabuada do número " + numero + ":\n" + output);
+        }
+      }
+    }
+
+    mostrarTabuada();
+  </script>
+</body>
+</html>

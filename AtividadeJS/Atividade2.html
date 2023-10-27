@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>JavaScript</title>
+  <meta name="author" content="Luis Guilherme de Oliveira Carvalho e Neillane de Carvalho">
+  <meta name="keywords" content="javascript, 200013749">
+  <meta name="description" content="Atividades sobre JavaScript">
+</head>
+<body>
+  <h1>Verificação de Número em JavaScript</h1>
+
+  <script>
+
+    function verificarNumero() {
+      var numero = prompt("Digite um número inteiro:");
+
+      if (numero === null || numero === "") {
+        alert("Nenhum número foi inserido.");
+      } else {
+        numero = parseFloat(numero); 
+
+        if (isNaN(numero)) {
+          alert("Você não digitou um número válido.");
+        } else if (numero > 0) {
+          alert("O número " + numero + " é positivo.");
+        } else if (numero < 0) {
+          alert("O número " + numero + " é negativo.");
+        } else {
+          alert("O número é zero.");
+        }
+      }
+    }
+
+    verificarNumero();
+  </script>
+</body>
+</html>
